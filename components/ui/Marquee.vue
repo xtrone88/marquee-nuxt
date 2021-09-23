@@ -58,7 +58,7 @@ export default Vue.extend({
   min-height: 100vh;
 
   &-body {
-    padding-top: 150px;
+    padding-top: 180px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -66,6 +66,7 @@ export default Vue.extend({
   }
 
   &-top {
+    padding-bottom: @spacing-large;
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
@@ -99,12 +100,15 @@ export default Vue.extend({
     &-left {
       flex-grow: 1;
       flex-shrink: 1;
-      text-align: center;
+      text-align: left;
+      padding-left: @spacing-xlarge;
       font-size: @font-size-heading4;
       font-weight: bold;
     }
 
     &-right {
+      text-align: right;
+      padding-right: @spacing-xlarge;
       flex-grow: 1;
       flex-shrink: 0;
       font-weight: bold;
